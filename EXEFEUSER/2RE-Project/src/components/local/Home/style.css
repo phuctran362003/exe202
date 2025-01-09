@@ -1,0 +1,51 @@
+/* Adjust the overall Swiper container */
+.mySwiper {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'digital';
+  src: url('./DigitalNumbers-Regular.ttf');
+}
+
+.swiper-pagination {
+  position: relative;
+  width: 15rem !important;
+  bottom: 1rem;
+}
+
+.number-countdown {
+  font-family: 'digital';
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #000000;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 640px; /* Adjust this value based on your layout needs */ /* Centers the swiper */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  overflow: hidden; /* Add this to manage overflow */
+}
+
+/* Adjust each slide's dimensions and settings */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px; /* Adjust slide width if needed */
+  height: 300px;
+  overflow: hidden; /* Ensure no content spills out */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto; /* Adjust for proper aspect ratio */
+}

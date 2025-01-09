@@ -1,0 +1,112 @@
+.productDetails {
+    display: flex; 
+    flex-direction: row; 
+  //   align-items: flex-start;
+  //   justify-content: start; 
+  //   margin:0 auto;
+  //   padding: 20px;
+  //   gap: 10px; 
+  
+    .imageSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center; 
+        gap: 10px;
+        
+        .mainImage {
+            width: 400px; 
+            height: 500px; 
+            object-fit: cover; 
+            border: 1px solid #ddd;
+        }
+  
+        .relatedImages {
+          height: 500px;
+          overflow: scroll;
+            display: flex;
+            flex-direction: column; 
+            gap: 10px;
+  
+            .relatedImage {
+                width: 80px; 
+                height: 80px; 
+                object-fit: cover; 
+                border: 1px solid #ddd;
+                cursor: pointer;
+                transition: border 0.3s;
+  
+                &:hover {
+                    border-color: #000; 
+                }
+            }
+        }
+    }
+  
+    .infoSection {
+      
+        display: flex;
+        flex-direction: column; 
+        gap: 40px;
+        margin: 0 40px;
+        flex-grow: 1;
+  
+        .productName {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+  
+        .description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+  
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+  
+        .sizeColor {
+            p {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+  
+            .colors {
+                display: flex;
+                gap: 10px;
+              margin-bottom: 30px;
+                .colorBox {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%; 
+                    border: 1px solid #ddd;
+                }
+            }
+        }
+  
+        .addToCartButton {
+          width: 70%;
+            background-color: white; 
+            border: none;
+            border-radius: 4px;
+            padding: 8px 70px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            border: 2px solid black;
+            &:hover {
+                background-color: black; 
+                color: white;
+            }
+        }
+    }
+  }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button{
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  
